@@ -1,0 +1,136 @@
+\hypertarget{classmsTfGetter_1_1tfGetter}{}\section{ms\+Tf\+Getter.\+tf\+Getter Class Reference}
+\label{classmsTfGetter_1_1tfGetter}\index{ms\+Tf\+Getter.\+tf\+Getter@{ms\+Tf\+Getter.\+tf\+Getter}}
+
+
+rosのtfモジュールを自分用にわかりやすくラッパーしたもの~\newline
+ と言っても、名前をまとめてlistenerとbroadcasterをまとめたもの  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmsTfGetter_1_1tfGetter_a576aeceb58ed338d02d4457b51ec7158}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)\hypertarget{classmsTfGetter_1_1tfGetter_a576aeceb58ed338d02d4457b51ec7158}{}\label{classmsTfGetter_1_1tfGetter_a576aeceb58ed338d02d4457b51ec7158}
+
+\begin{DoxyCompactList}\small\item\em tfとtf2のクラスを初期化~\newline
+ 0.\+5sのsleepを含む \end{DoxyCompactList}\item 
+def {\bfseries get} (self)\hypertarget{classmsTfGetter_1_1tfGetter_a2fff7638f57fc7b015edce329565f462}{}\label{classmsTfGetter_1_1tfGetter_a2fff7638f57fc7b015edce329565f462}
+
+\item 
+def \hyperlink{classmsTfGetter_1_1tfGetter_a2197923dada642c3d44df94990503e9a}{broadcast\+Tf} (self, transform\+Stamped)
+\begin{DoxyCompactList}\small\item\em 値のtfをbroadcastする \end{DoxyCompactList}\item 
+def \hyperlink{classmsTfGetter_1_1tfGetter_a82484ce686977bd9e1d3ffa2e3de5aee}{broadcast\+Static\+Tf} (self, transform\+Stamped)
+\begin{DoxyCompactList}\small\item\em 値が永続するtfをbroadcastする \end{DoxyCompactList}\item 
+def \hyperlink{classmsTfGetter_1_1tfGetter_aadb0e5d08e8c080fed67e1f7afe26931}{look\+Transform} (self, from\+Tf\+Name, to\+Tf\+Name)
+\begin{DoxyCompactList}\small\item\em from\+Tf\+Nameからみたto\+Tf\+Nameの状態を得る ~\newline
+ timeoutは0.05s \end{DoxyCompactList}\item 
+def \hyperlink{classmsTfGetter_1_1tfGetter_a170eb4a51944de61b2bfecff14df4a9a}{get\+Pose\+From\+Tf} (self, from\+Tf\+Name, pose\+Stamp)
+\begin{DoxyCompactList}\small\item\em from\+Tf\+Nameの基準座標系から見た、pose\+Stamp.\+header.\+frame\+\_\+idの座標系で表されるpose\+Stamp.\+poseの姿勢を取得する \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rosのtfモジュールを自分用にわかりやすくラッパーしたもの~\newline
+ と言っても、名前をまとめてlistenerとbroadcasterをまとめたもの 
+
+\begin{DoxyAuthor}{Author}
+sugino 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2018/12/21 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\index{ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}!broadcast\+Static\+Tf@{broadcast\+Static\+Tf}}
+\index{broadcast\+Static\+Tf@{broadcast\+Static\+Tf}!ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}}
+\subsubsection[{\texorpdfstring{broadcast\+Static\+Tf(self, transform\+Stamped)}{broadcastStaticTf(self, transformStamped)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Tf\+Getter.\+tf\+Getter.\+broadcast\+Static\+Tf (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{transform\+Stamped}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsTfGetter_1_1tfGetter_a82484ce686977bd9e1d3ffa2e3de5aee}{}\label{classmsTfGetter_1_1tfGetter_a82484ce686977bd9e1d3ffa2e3de5aee}
+
+
+値が永続するtfをbroadcastする 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform\+Stamped} & = tfに上げる\+Transform\+Stamped \\
+\hline
+\end{DoxyParams}
+\index{ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}!broadcast\+Tf@{broadcast\+Tf}}
+\index{broadcast\+Tf@{broadcast\+Tf}!ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}}
+\subsubsection[{\texorpdfstring{broadcast\+Tf(self, transform\+Stamped)}{broadcastTf(self, transformStamped)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Tf\+Getter.\+tf\+Getter.\+broadcast\+Tf (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{transform\+Stamped}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsTfGetter_1_1tfGetter_a2197923dada642c3d44df94990503e9a}{}\label{classmsTfGetter_1_1tfGetter_a2197923dada642c3d44df94990503e9a}
+
+
+値のtfをbroadcastする 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform\+Stamped} & = tfに上げる\+Transform\+Stamped \\
+\hline
+\end{DoxyParams}
+\index{ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}!get\+Pose\+From\+Tf@{get\+Pose\+From\+Tf}}
+\index{get\+Pose\+From\+Tf@{get\+Pose\+From\+Tf}!ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}}
+\subsubsection[{\texorpdfstring{get\+Pose\+From\+Tf(self, from\+Tf\+Name, pose\+Stamp)}{getPoseFromTf(self, fromTfName, poseStamp)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Tf\+Getter.\+tf\+Getter.\+get\+Pose\+From\+Tf (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{from\+Tf\+Name, }
+\item[{}]{pose\+Stamp}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsTfGetter_1_1tfGetter_a170eb4a51944de61b2bfecff14df4a9a}{}\label{classmsTfGetter_1_1tfGetter_a170eb4a51944de61b2bfecff14df4a9a}
+
+
+from\+Tf\+Nameの基準座標系から見た、pose\+Stamp.\+header.\+frame\+\_\+idの座標系で表されるpose\+Stamp.\+poseの姿勢を取得する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Tf\+Name(\+String)} & =　取得したい値の基準座標系のtf \\
+\hline
+{\em pose\+Stamp(\+Pose\+Stamped)} & = 取得したい座標系の情報を含んだ姿勢~\newline
+ pose\+Stamp.\+header.\+stampが空なら、現時刻を取得 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功 = Transform\+Stamped 
+
+失敗 = False 
+\end{DoxyReturn}
+\index{ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}!look\+Transform@{look\+Transform}}
+\index{look\+Transform@{look\+Transform}!ms\+Tf\+Getter\+::tf\+Getter@{ms\+Tf\+Getter\+::tf\+Getter}}
+\subsubsection[{\texorpdfstring{look\+Transform(self, from\+Tf\+Name, to\+Tf\+Name)}{lookTransform(self, fromTfName, toTfName)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Tf\+Getter.\+tf\+Getter.\+look\+Transform (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{from\+Tf\+Name, }
+\item[{}]{to\+Tf\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsTfGetter_1_1tfGetter_aadb0e5d08e8c080fed67e1f7afe26931}{}\label{classmsTfGetter_1_1tfGetter_aadb0e5d08e8c080fed67e1f7afe26931}
+
+
+from\+Tf\+Nameからみたto\+Tf\+Nameの状態を得る ~\newline
+ timeoutは0.05s 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Tf\+Name(\+String)} & = 基準座標となる\+Tfの名前 \\
+\hline
+{\em to\+Tf\+Name(\+String)} & = 取得対象となる\+Tfの名前 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功 = Transform\+Stamped 
+
+失敗or\+Timeout = False 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ms\+Tf\+Getter.\+py\end{DoxyCompactItemize}

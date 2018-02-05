@@ -1,0 +1,304 @@
+\hypertarget{classmsMoveGroup_1_1msMoveGroup}{}\section{ms\+Move\+Group.\+ms\+Move\+Group Class Reference}
+\label{classmsMoveGroup_1_1msMoveGroup}\index{ms\+Move\+Group.\+ms\+Move\+Group@{ms\+Move\+Group.\+ms\+Move\+Group}}
+
+
+rosのmove\+\_\+groupクラスを継承して、いくつか関数を追加したもの~\newline
+  
+
+
+
+
+Inheritance diagram for ms\+Move\+Group.\+ms\+Move\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classmsMoveGroup_1_1msMoveGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ms\+Move\+Group.\+ms\+Move\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classmsMoveGroup_1_1msMoveGroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a9800d2afd662bf45ccfb978007a55f08}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, group\+Name)
+\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_aadc2635eb78a0043d4f30ecc30eae959}{ms\+Plan} (self, kwargs)
+\begin{DoxyCompactList}\small\item\em 軌道を生成する~\newline
+ 優先順位\+: random $>$ pose\+Name $>$ joint $>$ pose $>$ position $>$ posture ~\newline
+ 例)ms\+Plan(joint=\mbox{[}0,0,0,0,0,0\mbox{]}) \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_aa3914f9104f9459d971f10d49fbf2d62}{ms\+Go} (self, kwargs)
+\begin{DoxyCompactList}\small\item\em 軌跡の計画と実行を行う。計画(plan)を渡すと実行のみを行う~\newline
+ 優先順位\+: plan $>$ random $>$ pose\+Name $>$ joint $>$ pose $>$ position $>$ posture ~\newline
+ 例)ms\+Go(joint=\mbox{[}0,0,0,0,0,0\mbox{]}) \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a3261620111e34668e764c0d522794b3a}{ms\+Plan\+Way} (self, way\+Point, eef\+\_\+step=0.\+01, jump\+\_\+threshold=0.\+0, avoid\+\_\+collisions=True, move\+Success\+Ratio=0.\+5)\hypertarget{classmsMoveGroup_1_1msMoveGroup_a3261620111e34668e764c0d522794b3a}{}\label{classmsMoveGroup_1_1msMoveGroup_a3261620111e34668e764c0d522794b3a}
+
+\begin{DoxyCompactList}\small\item\em 最終地点までの軌跡を生成してからでなく、１ステップ先ずつ関節角度を生成するから、行き詰まりやすい \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a5a35e7ca351f7d6ae9a6f8a78091061d}{ms\+Plan\+Shift} (self, vector\+List, reference\+Frame=None)
+\begin{DoxyCompactList}\small\item\em reference\+Frameを基準座標としたvector\+Listの方向にエンドエフェクタを動かす軌跡を生成する \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a77ea08da7914e81740daa8a35cf8bf69}{ms\+Get\+Current\+Pose} (self)\hypertarget{classmsMoveGroup_1_1msMoveGroup_a77ea08da7914e81740daa8a35cf8bf69}{}\label{classmsMoveGroup_1_1msMoveGroup_a77ea08da7914e81740daa8a35cf8bf69}
+
+\begin{DoxyCompactList}\small\item\em reference\+Frameからみたend\+Effectorの\+Poseを取得 ~\newline
+ get\+\_\+current\+\_\+poseでは、planning\+\_\+frameからの座標を取得するため \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a6d54897d1d6dde1a6782da893e281609}{ms\+Point\+To\+Position} (self, goal\+Position, arm\+Position, tip\+Direction\+Vector3=\mbox{[}0, base\+Open\+Vector=\mbox{[}0)
+\begin{DoxyCompactList}\small\item\em アームを何かの方向に向けたいときの姿勢を決定する関数 \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_afbe74bb02250901bedb872f2ca6ae542}{ms\+Pick} (self, object\+Id, gripping\+Joint\+Angle, openning\+Joint\+Angle, object\+Point=None, grip\+Posture=None, grip\+Position=\mbox{[}0, to\+Grip\+Move\+Vector=\mbox{[}0, to\+Retreat\+Move\+Vector=\mbox{[}0, try\+Num=2)
+\begin{DoxyCompactList}\small\item\em 不具合あり \end{DoxyCompactList}\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a203c6ca35199220d7aa82128fb50c28d}{ms\+Place} (self, object\+Id, openning\+Joint\+Angle, place\+Position, to\+Place\+Move\+Vector=\mbox{[}0, to\+Retreat\+Move\+Vector=\mbox{[}0)\hypertarget{classmsMoveGroup_1_1msMoveGroup_a203c6ca35199220d7aa82128fb50c28d}{}\label{classmsMoveGroup_1_1msMoveGroup_a203c6ca35199220d7aa82128fb50c28d}
+
+\begin{DoxyCompactList}\small\item\em 不具合あり \end{DoxyCompactList}\item 
+def {\bfseries make\+Gripper\+Posture} (self, joint\+Angle)\hypertarget{classmsMoveGroup_1_1msMoveGroup_a1bba0e1fe93c0a8306b8fbc52fc382e8}{}\label{classmsMoveGroup_1_1msMoveGroup_a1bba0e1fe93c0a8306b8fbc52fc382e8}
+
+\item 
+def {\bfseries make\+Gripper\+Translation} (self, min\+\_\+dist, desired, vector)\hypertarget{classmsMoveGroup_1_1msMoveGroup_ad1a287ac761df1eb05d97efd5bb6ac28}{}\label{classmsMoveGroup_1_1msMoveGroup_ad1a287ac761df1eb05d97efd5bb6ac28}
+
+\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_af0b43285c3f86890835cfdb2bd68b9ee}{make\+Arm\+Poses} (self, position, option=\char`\"{}R\+I\+NG\char`\"{})
+\item 
+def \hyperlink{classmsMoveGroup_1_1msMoveGroup_a5faf711fd580658280b0611969a3c45d}{hoge} (a=\mbox{[}1)
+\begin{DoxyCompactList}\small\item\em func setumei \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rosのmove\+\_\+groupクラスを継承して、いくつか関数を追加したもの~\newline
+ 
+
+\begin{DoxyAuthor}{Author}
+sugino 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2018/12/22 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, group\+Name)}{__init__(self, groupName)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{group\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_a9800d2afd662bf45ccfb978007a55f08}{}\label{classmsMoveGroup_1_1msMoveGroup_a9800d2afd662bf45ccfb978007a55f08}
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & Moveitで登録したグループ名 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!hoge@{hoge}}
+\index{hoge@{hoge}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{hoge(a=[1)}{hoge(a=[1)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+hoge (
+\begin{DoxyParamCaption}
+\item[{}]{a = {\ttfamily \mbox{[}1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_a5faf711fd580658280b0611969a3c45d}{}\label{classmsMoveGroup_1_1msMoveGroup_a5faf711fd580658280b0611969a3c45d}
+
+
+func setumei 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & print to terminal \\
+\hline
+\end{DoxyParams}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!make\+Arm\+Poses@{make\+Arm\+Poses}}
+\index{make\+Arm\+Poses@{make\+Arm\+Poses}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{make\+Arm\+Poses(self, position, option=""R\+I\+NG"")}{makeArmPoses(self, position, option="RING")}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+make\+Arm\+Poses (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{position, }
+\item[{}]{option = {\ttfamily \char`\"{}RING\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_af0b43285c3f86890835cfdb2bd68b9ee}{}\label{classmsMoveGroup_1_1msMoveGroup_af0b43285c3f86890835cfdb2bd68b9ee}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & 目標(中心)位置 \\
+\hline
+{\em option} & \char`\"{}\+R\+I\+N\+G\char`\"{} z軸周りに円状30箇所の姿勢を生成 ~\newline
+ \char`\"{}\+S\+P\+H\+E\+R\+E\char`\"{} 球状26箇所の姿勢を生成 ~\newline
+ \char`\"{}\+U\+P\+P\+E\+R\+\_\+\+H\+E\+M\+I\+S\+P\+H\+E\+R\+E\char`\"{} z軸に垂直な平面で割った半球状17箇所の姿勢を生成 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+位置+姿勢のリスト(list\+\_\+of\+\_\+\+Pose) 
+\end{DoxyReturn}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!ms\+Go@{ms\+Go}}
+\index{ms\+Go@{ms\+Go}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{ms\+Go(self, kwargs)}{msGo(self, kwargs)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+ms\+Go (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{kwargs}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_aa3914f9104f9459d971f10d49fbf2d62}{}\label{classmsMoveGroup_1_1msMoveGroup_aa3914f9104f9459d971f10d49fbf2d62}
+
+
+軌跡の計画と実行を行う。計画(plan)を渡すと実行のみを行う~\newline
+ 優先順位\+: plan $>$ random $>$ pose\+Name $>$ joint $>$ pose $>$ position $>$ posture ~\newline
+ 例)ms\+Go(joint=\mbox{[}0,0,0,0,0,0\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position(list\+\_\+of\+\_\+xyz\+\_\+position,Point,Vector3)} & = 位置 \\
+\hline
+{\em posture(list\+\_\+of\+\_\+xyzw,list\+\_\+of\+\_\+rpy,Quaternion)} & = 姿勢 \\
+\hline
+{\em pose(list\+\_\+of\+\_\+xyzxyzw,list\+\_\+of\+\_\+xyzrpy,Pose,Pose\+Stamped)} & = 位置+姿勢 \\
+\hline
+{\em joint(list\+\_\+of\+\_\+joints,Joint\+State)} & = 関節角度 \\
+\hline
+{\em pose\+Name(\+String)} & = 登録した関節角度の名前 \\
+\hline
+{\em random(bool)} & = 目標値をランダムに設定するか \\
+\hline
+{\em start\+Joint(list\+\_\+of\+\_\+joints,Joint\+State,Robot\+State)} & = 計画を作る初期の関節の状態 \\
+\hline
+{\em plan(\+Robot\+Trajectory)} & = 事前に立てた計画 \\
+\hline
+{\em is\+Wait\+Display\+Rviz(bool)} & = Rvizの描画完了まで待つかどうか \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成否(bool) 
+\end{DoxyReturn}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!ms\+Pick@{ms\+Pick}}
+\index{ms\+Pick@{ms\+Pick}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{ms\+Pick(self, object\+Id, gripping\+Joint\+Angle, openning\+Joint\+Angle, object\+Point=\+None, grip\+Posture=\+None, grip\+Position=[0, to\+Grip\+Move\+Vector=[0, to\+Retreat\+Move\+Vector=[0, try\+Num=2)}{msPick(self, objectId, grippingJointAngle, openningJointAngle, objectPoint=None, gripPosture=None, gripPosition=[0, toGripMoveVector=[0, toRetreatMoveVector=[0, tryNum=2)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+ms\+Pick (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{object\+Id, }
+\item[{}]{gripping\+Joint\+Angle, }
+\item[{}]{openning\+Joint\+Angle, }
+\item[{}]{object\+Point = {\ttfamily None}, }
+\item[{}]{grip\+Posture = {\ttfamily None}, }
+\item[{}]{grip\+Position = {\ttfamily \mbox{[}0}, }
+\item[{}]{to\+Grip\+Move\+Vector = {\ttfamily \mbox{[}0}, }
+\item[{}]{to\+Retreat\+Move\+Vector = {\ttfamily \mbox{[}0}, }
+\item[{}]{try\+Num = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_afbe74bb02250901bedb872f2ca6ae542}{}\label{classmsMoveGroup_1_1msMoveGroup_afbe74bb02250901bedb872f2ca6ae542}
+
+
+不具合あり 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gripping\+Joint\+Angle} & = 掴んているときのgripperの角度 \\
+\hline
+{\em openning\+Joint\+Angle} & = 開いている時のgripperの角度 \\
+\hline
+{\em object\+Point} & = 把持対象物の位置(把持するときに合わせる位置) \\
+\hline
+{\em grip\+Posture} & = 把持時のエンドエフェクタの姿勢 \\
+\hline
+{\em grip\+Position} & = エンドエフェクタから見た、掴んだ時にobjectが来る位置 \\
+\hline
+{\em to\+Grip\+Move\+Vector} & = 掴みに行く動作の方向と大きさ、エンドエフェクタ基準 \\
+\hline
+{\em to\+Retreat\+Move\+Vector} & = 掴んだ後に少し移動する方向と大きさ、エンドエフェクタ基準 \\
+\hline
+\end{DoxyParams}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!ms\+Plan@{ms\+Plan}}
+\index{ms\+Plan@{ms\+Plan}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{ms\+Plan(self, kwargs)}{msPlan(self, kwargs)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+ms\+Plan (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{kwargs}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_aadc2635eb78a0043d4f30ecc30eae959}{}\label{classmsMoveGroup_1_1msMoveGroup_aadc2635eb78a0043d4f30ecc30eae959}
+
+
+軌道を生成する~\newline
+ 優先順位\+: random $>$ pose\+Name $>$ joint $>$ pose $>$ position $>$ posture ~\newline
+ 例)ms\+Plan(joint=\mbox{[}0,0,0,0,0,0\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position(list\+\_\+of\+\_\+xyz\+\_\+position,Point,Vector3)} & = 位置 \\
+\hline
+{\em posture(list\+\_\+of\+\_\+xyzw,list\+\_\+of\+\_\+rpy,Quaternion)} & = 姿勢 \\
+\hline
+{\em pose(list\+\_\+of\+\_\+xyzxyzw,list\+\_\+of\+\_\+xyzrpy,Pose,Pose\+Stamped)} & = 位置+姿勢 \\
+\hline
+{\em joint(list\+\_\+of\+\_\+joints,Joint\+State)} & = 関節角度 \\
+\hline
+{\em pose\+Name(\+String)} & = 登録した関節角度の名前 \\
+\hline
+{\em random(bool)} & = 目標値をランダムに設定するか \\
+\hline
+{\em start\+Joint(list\+\_\+of\+\_\+joints,Joint\+State,Robot\+State)} & = 計画を作る初期の関節の状態 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功=軌道(\+Robot\+Trajectory) 
+
+失敗=False(bool) 
+\end{DoxyReturn}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!ms\+Plan\+Shift@{ms\+Plan\+Shift}}
+\index{ms\+Plan\+Shift@{ms\+Plan\+Shift}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{ms\+Plan\+Shift(self, vector\+List, reference\+Frame=\+None)}{msPlanShift(self, vectorList, referenceFrame=None)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+ms\+Plan\+Shift (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{vector\+List, }
+\item[{}]{reference\+Frame = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_a5a35e7ca351f7d6ae9a6f8a78091061d}{}\label{classmsMoveGroup_1_1msMoveGroup_a5a35e7ca351f7d6ae9a6f8a78091061d}
+
+
+reference\+Frameを基準座標としたvector\+Listの方向にエンドエフェクタを動かす軌跡を生成する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+List(list\+\_\+of\+\_\+xyz)} & 移動するベクトル(方向と量) \\
+\hline
+{\em reference\+Frame(\+String)} & vector\+Listの基準座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+軌跡(\+Robot\+Trajectory) 
+\end{DoxyReturn}
+\index{ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}!ms\+Point\+To\+Position@{ms\+Point\+To\+Position}}
+\index{ms\+Point\+To\+Position@{ms\+Point\+To\+Position}!ms\+Move\+Group\+::ms\+Move\+Group@{ms\+Move\+Group\+::ms\+Move\+Group}}
+\subsubsection[{\texorpdfstring{ms\+Point\+To\+Position(self, goal\+Position, arm\+Position, tip\+Direction\+Vector3=[0, base\+Open\+Vector=[0)}{msPointToPosition(self, goalPosition, armPosition, tipDirectionVector3=[0, baseOpenVector=[0)}}]{\setlength{\rightskip}{0pt plus 5cm}def ms\+Move\+Group.\+ms\+Move\+Group.\+ms\+Point\+To\+Position (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{goal\+Position, }
+\item[{}]{arm\+Position, }
+\item[{}]{tip\+Direction\+Vector3 = {\ttfamily \mbox{[}0}, }
+\item[{}]{base\+Open\+Vector = {\ttfamily \mbox{[}0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmsMoveGroup_1_1msMoveGroup_a6d54897d1d6dde1a6782da893e281609}{}\label{classmsMoveGroup_1_1msMoveGroup_a6d54897d1d6dde1a6782da893e281609}
+
+
+アームを何かの方向に向けたいときの姿勢を決定する関数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal\+Position(list\+\_\+of\+\_\+xyz)} & = アーム先端を向けたい位置 \\
+\hline
+{\em arm\+Position(list\+\_\+of\+\_\+xyz)} & = アームの最終位置、どの位置からオブジェクトの方向を向かせたいか \\
+\hline
+{\em tip\+Direction\+Vecotr3(list\+\_\+of\+\_\+xyz)} & = エンドエフェクタ座標系での、アーム先端方向。デフォはｚ軸方向 \\
+\hline
+{\em open\+Vector(list\+\_\+of\+\_\+xyz)} & = base\+\_\+link座標系での、アームの手の平？を向けたい方向。デフォはz軸方向 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+姿勢(list\+\_\+of\+\_\+xyzw) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ms\+Move\+Group.\+py\end{DoxyCompactItemize}

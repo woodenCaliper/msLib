@@ -1,0 +1,5 @@
+masami sugino作成のライブラリ
+pythonでimportするために
+~/.bashrcに
+export PYTHONPATH=/home/<your_pc_name>/msLib:$PYTHONPATH
+を追加する

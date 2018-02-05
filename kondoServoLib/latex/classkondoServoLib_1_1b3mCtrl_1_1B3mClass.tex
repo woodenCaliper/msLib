@@ -1,0 +1,330 @@
+\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass}{}\section{kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class Class Reference}
+\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass}\index{kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class@{kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class}}
+
+
+Inheritance diagram for kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classkondoServoLib_1_1b3mCtrl_1_1B3mClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classkondoServoLib_1_1b3mCtrl_1_1B3mClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \+\_\+port=None, \+\_\+baudrate=1500000, \+\_\+timeout=0.\+005)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab28360948b42d79f03158051877ca954}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab28360948b42d79f03158051877ca954}
+
+\item 
+def {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aba9380d00c91d145ef00f13b9d7d76a7}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aba9380d00c91d145ef00f13b9d7d76a7}
+
+\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a0011e73a24e0f0ece31b4297ac0b1312}{begin} (self, \+\_\+port=None, \+\_\+baudrate=None, \+\_\+timeout=None)
+\begin{DoxyCompactList}\small\item\em 通信開始設定 \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a8a8d8a892485a9aa537851e08311b9b7}{load\+Cmd} (self, id, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em R\+O\+Mを\+R\+A\+Mに書き込み(シングル/マルチ) \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a4455a0ce6b75651328ddfe49360891dc}{save\+Cmd} (self, id, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em R\+A\+Mを\+R\+O\+Mに書き込み(シングル/マルチ) \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_abf799c4dd10d66f48801326c7cf44372}{read\+Cmd} (self, id, address, length, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em R\+A\+Mの読み出し(シングル) \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab5e0a4218a091ba3a499da7dcd14b31a}{write\+Cmd} (self, id, address, data, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em R\+A\+Mへの書き込み(シングル/マルチ) \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aa8a3a74d41ac831954b8a01d6f487c8a}{reset\+Cmd} (self, id, time=0, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em 再起動要求(シングル/マルチ) \end{DoxyCompactList}\item 
+def \hyperlink{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ad4eb38a1437ddae5888aeb2c34b6a813}{position\+Cmd} (self, id, pos, time=0, option=\char`\"{}E\+R\+R\+OR\char`\"{})
+\begin{DoxyCompactList}\small\item\em 位置設定(シングル/マルチ) \end{DoxyCompactList}\item 
+def {\bfseries set\+Mode} (self, id, mode, option=\char`\"{}E\+R\+R\+OR\char`\"{})\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_adf996502303aa487f4053f116a53432a}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_adf996502303aa487f4053f116a53432a}
+
+\item 
+def {\bfseries set\+Trajectory\+Type} (self, id, \+\_\+type, option=\char`\"{}E\+R\+R\+OR\char`\"{})\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a80d952179d4a163bf940327838295dd1}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a80d952179d4a163bf940327838295dd1}
+
+\item 
+def {\bfseries set\+Ram} (self, id, data, property, option=\char`\"{}E\+R\+R\+OR\char`\"{})\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a3df6bc15e8c68b876ab9af208ee6ffb0}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a3df6bc15e8c68b876ab9af208ee6ffb0}
+
+\item 
+def {\bfseries get\+Ram} (self, id, property, option=\char`\"{}E\+R\+R\+OR\char`\"{})\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a556267ec8a99ea44fce091c61d3c53b6}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a556267ec8a99ea44fce091c61d3c53b6}
+
+\item 
+def {\bfseries set\+New\+Id} (self, current\+Id, new\+Id)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab8e85e88765bc5476e34bf2e9fa07527}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab8e85e88765bc5476e34bf2e9fa07527}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def {\bfseries deg\+To\+Pos} (deg)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab1c79f3b27609003cf8896b58b2aba5a}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab1c79f3b27609003cf8896b58b2aba5a}
+
+\item 
+def {\bfseries pos\+To\+Deg} (pos)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ad0b48cf19eb33b2e9008c16ae8d49002}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ad0b48cf19eb33b2e9008c16ae8d49002}
+
+\item 
+def {\bfseries rad\+To\+Pos} (rad)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aacc7f359bec5b5117c187fb22e2417b6}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aacc7f359bec5b5117c187fb22e2417b6}
+
+\item 
+def {\bfseries pos\+To\+Rad} (pos)\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a96ed8d1b0059d8523c0096e75aa3a352}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a96ed8d1b0059d8523c0096e75aa3a352}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries port}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_afce4612ca370673aae07649868e57386}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_afce4612ca370673aae07649868e57386}
+
+\item 
+{\bfseries baudrate}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a2e589066c3f3f08af5f1ef1779b0b192}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a2e589066c3f3f08af5f1ef1779b0b192}
+
+\item 
+{\bfseries timeout}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a4ced53ee2019d71f41caf7540915cc7e}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a4ced53ee2019d71f41caf7540915cc7e}
+
+\item 
+{\bfseries last\+Snyc\+End\+Time}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ac0edaa150cbd1a0d6a3d5582568449bf}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ac0edaa150cbd1a0d6a3d5582568449bf}
+
+\item 
+{\bfseries receive\+Len\+Plan}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ac83d747fb138aded4ad4c35cf1206ebf}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ac83d747fb138aded4ad4c35cf1206ebf}
+
+\item 
+{\bfseries gard\+Time}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a2eecf362e6824da5dbef84eba18101ce}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a2eecf362e6824da5dbef84eba18101ce}
+
+\item 
+{\bfseries b3m\+Serial}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aefd7aa4627d0b41d80ec44e6602ba853}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aefd7aa4627d0b41d80ec44e6602ba853}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries M\+A\+X\+\_\+\+ID} = 255\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a92c5da3a7168857ea770078574132290}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a92c5da3a7168857ea770078574132290}
+
+\item 
+int {\bfseries M\+I\+N\+\_\+\+ID} = 0\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a3503c1076faba33710746d3618c57e0d}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a3503c1076faba33710746d3618c57e0d}
+
+\item 
+int {\bfseries M\+A\+X\+\_\+\+P\+OS} = 32000\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a70d773fe1e2ccfb6a955110140cf0a59}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a70d773fe1e2ccfb6a955110140cf0a59}
+
+\item 
+int {\bfseries M\+I\+N\+\_\+\+P\+OS} = -\/32000\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a29f228cf17efb8c5f48180dc485c5cae}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a29f228cf17efb8c5f48180dc485c5cae}
+
+\item 
+dictionary {\bfseries M\+E\+M\+O\+R\+Y\+\_\+\+M\+AP}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a71883622fe29913c6f899129c39681b4}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a71883622fe29913c6f899129c39681b4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!begin@{begin}}
+\index{begin@{begin}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{begin(self, \+\_\+port=\+None, \+\_\+baudrate=\+None, \+\_\+timeout=\+None)}{begin(self, _port=None, _baudrate=None, _timeout=None)}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+begin (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{\+\_\+port = {\ttfamily None}, }
+\item[{}]{\+\_\+baudrate = {\ttfamily None}, }
+\item[{}]{\+\_\+timeout = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a0011e73a24e0f0ece31b4297ac0b1312}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a0011e73a24e0f0ece31b4297ac0b1312}
+
+
+通信開始設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+port(str)} & = デバイス名 \\
+\hline
+{\em \+\_\+baudrate(int)} & = 通信速度 \\
+\hline
+{\em \+\_\+timeout(float)} & = 受信待ちタイムアウト時間 \\
+\hline
+\end{DoxyParams}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!load\+Cmd@{load\+Cmd}}
+\index{load\+Cmd@{load\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{load\+Cmd(self, id, option=""E\+R\+R\+OR"")}{loadCmd(self, id, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+load\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a8a8d8a892485a9aa537851e08311b9b7}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a8a8d8a892485a9aa537851e08311b9b7}
+
+
+R\+O\+Mを\+R\+A\+Mに書き込み(シングル/マルチ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID(シングル) \\
+\hline
+{\em id(list)} & = サーボ\+ID(マルチ) \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功(tuple) = (True, ステータス) 
+
+失敗(tuple) = (False, False) 
+\end{DoxyReturn}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!position\+Cmd@{position\+Cmd}}
+\index{position\+Cmd@{position\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{position\+Cmd(self, id, pos, time=0, option=""E\+R\+R\+OR"")}{positionCmd(self, id, pos, time=0, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+position\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{pos, }
+\item[{}]{time = {\ttfamily 0}, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ad4eb38a1437ddae5888aeb2c34b6a813}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ad4eb38a1437ddae5888aeb2c34b6a813}
+
+
+位置設定(シングル/マルチ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID(シングル) \\
+\hline
+{\em id(list)} & = サーボ\+ID(マルチ) \\
+\hline
+{\em pos(float)} & = 目標位置\mbox{[}rad\mbox{]} \\
+\hline
+{\em pos(list)} & = 目標位置\mbox{[}rad\mbox{]} \\
+\hline
+{\em time(float)} & = 移動完了目標時間\mbox{[}sec\mbox{]} \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成否(bool) 
+\end{DoxyReturn}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!read\+Cmd@{read\+Cmd}}
+\index{read\+Cmd@{read\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{read\+Cmd(self, id, address, length, option=""E\+R\+R\+OR"")}{readCmd(self, id, address, length, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+read\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{address, }
+\item[{}]{length, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_abf799c4dd10d66f48801326c7cf44372}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_abf799c4dd10d66f48801326c7cf44372}
+
+
+R\+A\+Mの読み出し(シングル) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID \\
+\hline
+{\em address(int)} & = 読み込みアドレス \\
+\hline
+{\em length(int)} & = 読み込みデータ長さ \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功(tuple) = (R\+A\+Mデータ, ステータス) 
+
+失敗(tuple) = (False, False) 
+\end{DoxyReturn}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!reset\+Cmd@{reset\+Cmd}}
+\index{reset\+Cmd@{reset\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{reset\+Cmd(self, id, time=0, option=""E\+R\+R\+OR"")}{resetCmd(self, id, time=0, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+reset\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{time = {\ttfamily 0}, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aa8a3a74d41ac831954b8a01d6f487c8a}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_aa8a3a74d41ac831954b8a01d6f487c8a}
+
+
+再起動要求(シングル/マルチ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID(シングル) \\
+\hline
+{\em id(list)} & = サーボ\+ID(マルチ) \\
+\hline
+{\em time(float)} & = 再起動遅延時間(sec) \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成否(bool) 
+\end{DoxyReturn}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!save\+Cmd@{save\+Cmd}}
+\index{save\+Cmd@{save\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{save\+Cmd(self, id, option=""E\+R\+R\+OR"")}{saveCmd(self, id, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+save\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a4455a0ce6b75651328ddfe49360891dc}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_a4455a0ce6b75651328ddfe49360891dc}
+
+
+R\+A\+Mを\+R\+O\+Mに書き込み(シングル/マルチ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID(シングル) \\
+\hline
+{\em id(list)} & = サーボ\+ID(マルチ) \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功(tuple) = (True, True) 
+
+失敗(tuple) = (False, False) 
+\end{DoxyReturn}
+\index{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}!write\+Cmd@{write\+Cmd}}
+\index{write\+Cmd@{write\+Cmd}!kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class@{kondo\+Servo\+Lib\+::b3m\+Ctrl\+::\+B3m\+Class}}
+\subsubsection[{\texorpdfstring{write\+Cmd(self, id, address, data, option=""E\+R\+R\+OR"")}{writeCmd(self, id, address, data, option="ERROR")}}]{\setlength{\rightskip}{0pt plus 5cm}def kondo\+Servo\+Lib.\+b3m\+Ctrl.\+B3m\+Class.\+write\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{address, }
+\item[{}]{data, }
+\item[{}]{option = {\ttfamily \char`\"{}ERROR\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab5e0a4218a091ba3a499da7dcd14b31a}{}\label{classkondoServoLib_1_1b3mCtrl_1_1B3mClass_ab5e0a4218a091ba3a499da7dcd14b31a}
+
+
+R\+A\+Mへの書き込み(シングル/マルチ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id(int)} & = サーボ\+ID(シングル) \\
+\hline
+{\em id(list)} & = サーボ\+ID(マルチ) \\
+\hline
+{\em address(int)} & = 書き込みアドレス \\
+\hline
+{\em data(list)} & = 書き込みデータ(シングル) \\
+\hline
+{\em data(list\+\_\+of\+\_\+list)} & = 書き込みデータ(マルチ) ~\newline
+ 例)data次元数 = idの次元数+1 id=\mbox{[}1,2,3\mbox{]} data=\mbox{[}\mbox{[}10,20\mbox{]}, \mbox{[}100,200\mbox{]}, \mbox{[}1000,2000\mbox{]}\mbox{]} \\
+\hline
+{\em option(str)} & = 返値オプション \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+シングル成功(tuple) = (R\+A\+Mデータ, ステータス) 
+
+マルチ成功(tuple) = (True, True) 
+
+失敗(tuple) = (False, False) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+b3m\+Ctrl.\+py\end{DoxyCompactItemize}
